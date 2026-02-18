@@ -35,9 +35,9 @@ function Contact() {
   return (
     <div className='contact'>
         <h1>Contact</h1>
-        {submitted && <p className="success">Message sent successfully!</p>}
-        <form onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
         <input
+          className="input"
           type="text"
           name="name"
           placeholder="Your name"
@@ -47,6 +47,7 @@ function Contact() {
         />
 
         <input
+          className="input"
           type="email"
           name="email"
           placeholder="Your email"
@@ -56,6 +57,7 @@ function Contact() {
         />
 
         <textarea
+          className="input message"
           name="message"
           placeholder="Your message"
           value={formData.message}
@@ -63,7 +65,9 @@ function Contact() {
           required
         />
 
-        <button type="submit">Send</button>
+        <button className="send-button" type="submit">Send</button>
+        {submitted && <p className="success">Message sent successfully!</p>}
+
       </form>
 
         

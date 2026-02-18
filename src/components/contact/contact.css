@@ -1,0 +1,40 @@
+
+.input{
+    width: 30%;
+    height: 70px;
+    min-width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: none;
+    border-color: white;
+    color:white;
+    text-align: center;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+.message{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: start;
+    resize: vertical;
+    height: 200px;
+}
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.349);
+}
+
+.send-button{
+    width: 15%;
+    height: 50px;
+}
+.contact-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

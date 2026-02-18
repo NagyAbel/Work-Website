@@ -1,0 +1,17 @@
+.description{
+  background-color: #242424;
+    min-width: 450px;
+    width: 50%;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image{
+ width: 10%;
+ border-radius: 20px;
+}
