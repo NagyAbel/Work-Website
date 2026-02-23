@@ -1,6 +1,7 @@
 .header{
-    padding: 1rem;
     background-color: #25373a;
+    width: 100%;  
+    display: flex;
 }
 
 .nav-bar{
@@ -20,7 +21,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
     transition: all 0.3s ease;
-
+    min-width: 125px;
     font-size: 1.1em;
     margin-left: 1em;
     margin-right: 1em;
@@ -42,12 +43,29 @@
 .left{
   width: 25%;
 }
-@media (max-width: 950px) {
+@media (max-width: 850px) {
   .nav-bar {
     flex-direction: column; /* stack items vertically */
     align-items: center;
-  }
+    margin: 0px;
+    padding: 0px;
 
+  }
+  .title{
+    font-size: xx-large;
+  }
+  .mes{
+    font-size: small;
+  }
+  .nav-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: medium;
+    min-width: 105px;
+  }
+  .header{
+    margin: 0px;  
+  }
   .left,
   .center,
   .right {
