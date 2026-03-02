@@ -6,7 +6,7 @@ import server from "../../assets/server.png";
 function Portfolio() {
   return (
     <div className='portfolio'>
-        <h2>Some projects that I have worked on!</h2>
+        <h2>A few projects:</h2>
         <div className='item-holder'>
            <div className='item'>
               <p className='item-title'>Car Configurator</p>

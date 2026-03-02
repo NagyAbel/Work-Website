@@ -1,7 +1,15 @@
 import './contact.css'
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from "react-google-recaptcha";
 
+import { useRef } from 'react';
 function Contact() {
+
+  const form = useRef();
+  const recaptchaRef = useRef();
+  const [captchaValue, setCaptchaValue] = useState(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,8 +29,22 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const data = {
+      ...formData,
+      time: new Date().toLocaleString() // local date/time
+    };
 
-    console.log(formData); // later you’ll send this to backend
+    if (!captchaValue) {
+      alert("Please verify that you are not a robot!");
+      return;
+    }
+    emailjs.sendForm(
+      'service_v1drdpm',  
+      'template_tqabteg', 
+      form.current,
+      'Sp0VybSVEqrjhs81w'       
+    )
+
     setSubmitted(true);
 
     // Reset form
@@ -35,7 +57,7 @@ function Contact() {
   return (
     <div className='contact'>
         <h1>Contact</h1>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit} ref={form} >
         <input
           className="input"
           type="text"
@@ -64,7 +86,11 @@ function Contact() {
           onChange={handleChange}
           required
         />
-
+        <ReCAPTCHA
+          sitekey="6LdtgX0sAAAAAN4Fxi_C1M7wZHDY2TU93emzakKN"
+          ref={recaptchaRef}
+          onChange={(value) => setCaptchaValue(value)}
+        />
         <button className="send-button" type="submit">Send</button>
         {submitted && <p className="success">Message sent successfully!</p>}
 
