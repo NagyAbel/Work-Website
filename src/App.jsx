@@ -1,30 +1,38 @@
-import { useState } from "react"
-import './App.css'
-import Header from './components/header/header.jsx'
-import Footer from './components/footer/footer.jsx'
-import About from './components/about/about.jsx'
-import Contact from './components/contact/contact.jsx'
-import Portfolio from './components/portfolio/portfolio.jsx'
+import "./App.css";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import About from "./components/about/about";
+import Portfolio from "./components/portfolio/portfolio";
+import Contact from "./components/contact/contact";
+import Reviews from "./components/reviews/reviews";
 
 function App() {
-  const [section, setSection] = useState("about");
-
   return (
     <>
       <Header
         title="Nagy Ábel"
         message="Software developer"
-        onNavigate={setSection}
-        currentSection={section}
       />
 
-      {section === "about" && <About />}
-      {section === "contact" && <Contact />}
-      {section === "portfolio" && <Portfolio />}
+      <main>
+        <section id="about">
+          <About />
+        </section>
 
-      <Footer year="© Copyright 2026"/>
+        <section id="portfolio">
+          <Portfolio />
+        </section>
+        <section id="reviews">
+          <Reviews />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+
+      <Footer year="© Copyright 2026" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,63 +1,187 @@
-
-.input{
-    width: 30%;
-    height: 70px;
-    min-width: 400px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: none;
-    border-color: white;
-    color:white;
-    text-align: center;
-    font-size: x-large;
-    box-sizing: border-box;
+/* CONTACT SECTION */
+.contact {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: radial-gradient(
+    circle at top,
+    var(--secondary-color),
+    var(--accent-color)
+  );
+  padding: 30px 20px;
+  box-sizing: border-box;
 }
 
-.message{
-    width: 30%;
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: start;
-    resize: vertical;
-    height: 200px;
-}
-.input::placeholder{
-    color: rgba(255, 255, 255, 0.349);
+.contact h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-color, #ffffff);
 }
 
-.send-button{
-    margin-top: 10px;
-    width: 15%;
-    min-width: 150px;
-    height: 50px;
+/* FORM CONTAINER */
+.contact-form {
+  width: min(800px, 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  padding: 35px 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeUp 0.8s ease;
+  box-sizing: border-box;
 }
-.contact-form{
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+/* INPUT & TEXTAREA FIELD STYLING */
+.input {
+  width: 100%;
+  max-width: 600px;
+  min-width: unset; /* Replaced rigid 400px with responsive max-width */
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: left;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.message {
+  height: 150px;
+  padding: 15px 18px;
+  resize: vertical;
+}
+
+/* SUBMIT BUTTON WITH SHINE EFFECT */
+.send-button {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+/* Button Shine Animation */
+.send-button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: 0.6s;
+}
+
+.send-button:hover::before {
+  top: 100%;
+  left: 100%;
+}
+
+.send-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* SUCCESS FEEDBACK MESSAGE */
+.success {
+  margin-top: 15px;
+  color: #4ed99d;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeUp 0.4s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 850px) {
-    .input{
-        min-width: 300px;
-        width: 65%;
-        height: 50px;
-        font-size: large;
+  .contact {
+    /* Match exact padding used by Portfolio and other sections */
+    padding: 20px 10px; 
+  }
 
-    }
- 
+  .contact h1 {
+    font-size: 2rem;
+    margin-bottom: 16px; /* Normalized margin under heading */
+  }
+
+  .contact-form {
+    width: 95%;
+    padding: 20px 15px; /* Compacted inner form padding */
+  }
+
+  .input {
+    font-size: 1rem;
+    height: 45px;
+    margin-bottom: 15px; /* Compacted input spacing */
+  }
+
+  .message {
+    height: 120px;
+  }
+
+  /* Wrap ReCAPTCHA to prevent layout breaks on small screens */
+  .contact-form iframe,
+  .contact-form > div {
+    max-width: 100%;
+    transform-origin: center;
+  }
+
+  .send-button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
 }
 
-
-@media (max-width: 1000px) {
-    .input{
-        height: 70px;
-
-    }
- 
-}

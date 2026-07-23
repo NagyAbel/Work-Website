@@ -1,0 +1,45 @@
+
+{
+  "contact": "Contact",
+  "about": "About Me",
+  "portfolio": "Portfolio",
+  "reviews": "Reviews",
+
+
+  "about_me_title": "Something short about myself",
+  "description": "Welcome! My name is Nagy Ábel, and I'm a software developer. While that's a broad title, it best describes the variety of work I enjoy. Since 2020, I've worked on everything from games built with Unity to backend systems, business software, and websites using a variety of technologies. I enjoy solving problems, learning new technologies, and turning ideas into reliable, well-crafted software.",
+    
+  "contact_title":"Contact",
+  "contact_name":"Your name",
+  "contact_email":"Your email",
+  "contact_message":"Your message",
+  "contact_send":"Send",
+
+   "card_web_title":"Web Development",
+   "card_web_description":"Modern, responsive websites and web applications built with the latest technologies.",
+
+   "card_game_title":"Game Development",
+   "card_game_description":"Interactive 2D and 3D games using Unity, focusing on polished gameplay and engaging user experiences.",
+
+   "card_android_title":"Android Apps",
+   "card_android_description":"Native and cross-platform Android applications designed for performance, usability and scalability.",
+
+   "card_con_title":"Consultation",
+   "card_con_description":"Technical guidance, architecture planning and problem solving to help turn your ideas into successful products.",
+    
+    "portfolio_title_car":"Car Configurator",
+    "portfolio_title_block":"Blockways",
+    "portfolio_title_bus":"Bus Tracker",
+    "portfolio_title_scryper":"Scryper",
+    "portfolio_title_fitness":"Fitness App",
+
+    "portfolio_desc_car":"A 3D car customization application where users can configure vehicles with different parts, colors and options.",
+    "portfolio_desc_block":"A modern application focused on blockchain technology with a clean interface and efficient functionality.",
+    "portfolio_desc_bus":"A custom system for tracking public transport, contains an android app, web interface, and admin panel.",
+    "portfolio_desc_scryper":"A new type of boardgame developed using the Unity game engine.",
+    "portfolio_desc_fitness":"A weight tracking web application. Developed using React for frontend and Laravel backend.",
+
+    "review_title":"Client Reviews",
+    "fiverr_button_text":"More reviews on fiverr",
+    "portfolio_title":"Featured Projects"
+}

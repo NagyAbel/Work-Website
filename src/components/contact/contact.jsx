@@ -2,6 +2,7 @@ import './contact.css'
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
+import { useTranslation } from "react-i18next";
 
 import { useRef } from 'react';
 function Contact() {
@@ -9,6 +10,7 @@ function Contact() {
   const form = useRef();
   const recaptchaRef = useRef();
   const [captchaValue, setCaptchaValue] = useState(null);
+  const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -56,13 +58,13 @@ function Contact() {
   };
   return (
     <div className='contact'>
-        <h1>Contact</h1>
+        <h1>{t("contact_title")}</h1>
         <form className="contact-form" onSubmit={handleSubmit} ref={form} >
         <input
           className="input"
           type="text"
           name="name"
-          placeholder="Your name"
+          placeholder={t("contact_name")}
           value={formData.name}
           onChange={handleChange}
           required
@@ -72,7 +74,7 @@ function Contact() {
           className="input"
           type="email"
           name="email"
-          placeholder="Your email"
+          placeholder={t("contact_email")}
           value={formData.email}
           onChange={handleChange}
           required
@@ -81,7 +83,7 @@ function Contact() {
         <textarea
           className="input message"
           name="message"
-          placeholder="Your message"
+          placeholder={t("contact_message")}
           value={formData.message}
           onChange={handleChange}
           required
@@ -91,7 +93,7 @@ function Contact() {
           ref={recaptchaRef}
           onChange={(value) => setCaptchaValue(value)}
         />
-        <button className="send-button" type="submit">Send</button>
+        <button className="send-button" type="submit">{t("contact_send")}</button>
         {submitted && <p className="success">Message sent successfully!</p>}
 
       </form>

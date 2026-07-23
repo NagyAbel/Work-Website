@@ -1,0 +1,44 @@
+
+{
+  "contact": "Contact",
+  "about": "Despre mine",
+  "portfolio": "Portofoliu",
+  "reviews": "Recenzii",
+
+  "about_me_title": "Câteva cuvinte despre mine",
+  "description": "Bine ai venit! Mă numesc Nagy Ábel și sunt dezvoltator software. Deși este un termen destul de general, descrie cel mai bine diversitatea proiectelor la care îmi place să lucrez. Din 2020, am lucrat la o gamă variată de proiecte, de la jocuri dezvoltate în Unity până la sisteme backend, aplicații de business și site-uri web, folosind diferite tehnologii. Îmi place să rezolv probleme, să învăț tehnologii noi și să transform ideile în aplicații fiabile și bine realizate.",
+
+  "contact_title":"Contact",
+  "contact_name":"Nume",
+  "contact_email":"Email",
+  "contact_message":"Mesaj",
+  "contact_send":"Trimite",
+
+
+  "card_web_title": "Dezvoltare web",
+  "card_web_description": "Site-uri web moderne și responsive, precum și aplicații web dezvoltate folosind cele mai noi tehnologii.",
+
+  "card_game_title": "Dezvoltare de jocuri",
+  "card_game_description": "Jocuri interactive 2D și 3D dezvoltate cu Unity, axate pe un gameplay bine finisat și experiențe captivante pentru utilizatori.",
+
+  "card_android_title": "Aplicații Android",
+  "card_android_description": "Aplicații Android native și cross-platform concepute pentru performanță, ușurință în utilizare și scalabilitate.",
+
+  "card_con_title": "Consultanță",
+  "card_con_description": "Ghidare tehnică, planificarea arhitecturii și rezolvarea problemelor pentru a transforma ideile tale în produse de succes.",
+  "review_title":"Recenzii ale clienților",
+  "fiverr_button_text": "Mai multe recenzii pe Fiverr",
+  "portfolio_title":"Proiecte realizate",
+  "portfolio_title_car": "Configurator auto",
+  "portfolio_title_block": "Blockways",
+  "portfolio_title_bus": "Monitorizare autobuze",
+  "portfolio_title_scryper": "Scryper",
+  "portfolio_title_fitness": "Aplicație de fitness",
+
+  "portfolio_desc_car": "O aplicație 3D de personalizare auto, unde utilizatorii pot configura vehicule cu diferite piese, culori și opțiuni.",
+  "portfolio_desc_block": "O aplicație modernă axată pe tehnologia blockchain, cu o interfață curată și funcționalitate eficientă.",
+  "portfolio_desc_bus": "Un sistem personalizat pentru monitorizarea transportului public, ce include o aplicație Android, o interfață web și un panou de administrare.",
+  "portfolio_desc_scryper": "Un nou tip de joc de table dezvoltat folosind motorul grafic Unity.",
+  "portfolio_desc_fitness": "O aplicație web pentru monitorizarea greutății. Dezvoltată folosind React pentru frontend și Laravel pentru backend."
+
+}

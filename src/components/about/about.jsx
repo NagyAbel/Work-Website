@@ -1,26 +1,68 @@
-import './about.css'
-import logo from "../../assets/profile.jpeg";
+import "./about.css";
+import logo from "../../assets/profile.png";
+import { useTranslation } from "react-i18next";
+import {
+  FaGlobe,
+  FaGamepad,
+  FaAndroid,
+  FaComments,
+} from "react-icons/fa";
 
 function About() {
-  return (
-    <div className='about'>
-        <h2>Something short about myself</h2>
-      <div className='holder'>
-        <img  className='profile-image' src={logo}/>
-        <p className="description">
-          My name is Nagy Ábel Gergely, currently studying Computer Science in the city of Szeged. I have
-          been interested in software development from an early age, and since then, I have
-          managed to learn a great deal in the field. Around four years ago, I started my freelancing
-          business, where I had the opportunity to collaborate with numerous clients on a variety of
-          projects. Since 2024, I have been spending most of my time in Szeged, and I am eager to
-          further expand my knowledge in the field by finding the right company to work with!
-        </p>
-      </div>
-     
-        
-    </div>
+  const { t } = useTranslation();
 
-  )
+  return (
+    <div className="about">
+      <h2>{t("about_me_title")}</h2>
+
+      <div className="holder">
+
+          <div className="image-description">
+          <div className="profile-container">
+                <img className="profile-image" src={logo} />
+          </div>
+
+          <p className="description">
+            {t("description")}
+          </p>
+        </div>
+       
+        <div className="services">
+          <div className="service-card">
+            <FaGlobe className="service-icon" />
+            <h3>{t("card_web_title")}</h3>
+            <p>
+              {t("card_web_description")}
+            </p>
+          </div>
+
+          <div className="service-card">
+            <FaGamepad className="service-icon" />
+            <h3>{t("card_game_title")}</h3>
+            <p>
+              {t("card_game_description")}
+            </p>
+          </div>
+
+          <div className="service-card">
+            <FaAndroid className="service-icon" />
+            <h3>{t("card_android_title")}</h3>
+            <p>
+              {t("card_android_description")}
+            </p>
+          </div>
+
+          <div className="service-card">
+            <FaComments className="service-icon" />
+            <h3>{t("card_con_title")}</h3>
+            <p>
+              {t("card_con_description")}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;

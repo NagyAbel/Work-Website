@@ -1,0 +1,52 @@
+.language-switcher-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* The outer track holding all 3 options together */
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px; /* Seamless full-pill wrapper */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Override standard header button styling for language options */
+.language-switcher .language-option {
+  /* Reset default button styling */
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+
+  /* FIX: Transparent border reserves exact space to prevent jumping */
+  border: 1px solid transparent !important;
+
+  color: rgba(255, 255, 255, 0.55);
+  padding: 5px 14px; /* Reduced vertical padding by 1px to offset border height */
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: none !important;
+}
+
+/* Hover state on inactive languages */
+.language-switcher .language-option:hover:not(.active) {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Active language pill that highlights inside the track */
+.language-switcher .language-option.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important; /* ONLY change color, not border size */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
