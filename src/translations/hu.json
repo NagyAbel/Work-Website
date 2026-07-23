@@ -1,0 +1,45 @@
+
+{
+  "contact": "Kapcsolat",
+  "about": "Rólam",
+  "portfolio": "Portfólió",
+  "reviews": "Vélemények",
+
+
+  "about_me_title": "Röviden rólam",
+  "description": "Üdvözöllek! Nagy Ábel vagyok, szoftverfejlesztő. Bár ez egy tág fogalom, jól tükrözi, milyen sokféle területen szeretek dolgozni. 2020 óta számos projekten dolgoztam, a Unityvel készült játékoktól kezdve backend rendszereken, üzleti szoftvereken és weboldalakon át, különböző technológiákat alkalmazva. Szeretem a problémamegoldást, az új technológiák elsajátítását, valamint az ötletek megbízható, jól megtervezett szoftverré alakítását.",
+
+  "contact_title":"Kapcsolat",
+  "contact_name":"Név",
+  "contact_email":"Email",
+  "contact_message":"Üzenet",
+  "contact_send":"Küldés",
+
+
+  "card_web_title": "Webfejlesztés",
+  "card_web_description": "Modern, reszponzív weboldalak és webalkalmazások fejlesztése a legújabb technológiák használatával. ",
+
+  "card_game_title": "Játékfejlesztés",
+  "card_game_description": "Interaktív 2D és 3D játékok Unity használatával, a kifinomult játékmenetre és felhasználói élményre összpontosítva.",
+
+  "card_android_title": "Android alkalmazások",
+  "card_android_description": "Natív és keresztplatformos Android alkalmazások, amelyek teljesítményre, könnyű használatra és skálázhatóságra lettek tervezve.",
+
+  "card_con_title": "Tanácsadás",
+  "card_con_description": "Technikai útmutatás, architektúra tervezés és problémamegoldás, hogy ötleteid sikeres termékekké váljanak.",
+  "review_title":"Ügyfélvélemények",
+  "fiverr_button_text": "Még több értékelés Fiverren",
+  "portfolio_title":"Megvalósított projektek",
+  "portfolio_title_car": "Autó konfigurátor",
+  "portfolio_title_block": "Blockways",
+  "portfolio_title_bus": "Buszkövető",
+  "portfolio_title_scryper": "Scryper",
+  "portfolio_title_fitness": "Fitness alkalmazás",
+
+  "portfolio_desc_car": "Egy 3D-s autó-testreszabó alkalmazás, ahol a felhasználók különböző alkatrészekkel, színekkel és opciókkal konfigurálhatják a járműveket.",
+  "portfolio_desc_block": "Egy modern, blokklánc-technológiára összpontosító multiplayer játék, letisztult felülettel.",
+  "portfolio_desc_bus": "Egy egyedi tömegközlekedési járatkövető rendszer, amely egy Android appot, webes felületet és egy adminisztrációs panelt tartalmaz.",
+  "portfolio_desc_scryper": "Egy új típusú társasjáték, amely a Unity játékfejlesztő motorral készült.",
+  "portfolio_desc_fitness": "Egy testsúlykövető webalkalmazás. A frontend React, a backend pedig Laravel használatával készült."
+
+}

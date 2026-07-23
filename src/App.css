@@ -1,0 +1,53 @@
+#root {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+main {
+  padding-top: 0px; /* Match your header height */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- GAP FIX HERE --- */
+section {
+  /* Offset scroll position so titles sit below your navbar (adjust 80px to match your header height) */
+  scroll-margin-top: 100px; 
+  min-height: auto;
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+
+
+  section {
+    min-height: auto;
+    scroll-margin-top: 85px;
+  }
+}
+
+@media (max-width: 850px) {
+
+
+  section {
+    min-height: auto;
+    scroll-margin-top: 90px;
+  }
+}
+
+html, body {
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
