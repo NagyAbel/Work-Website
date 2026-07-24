@@ -40,6 +40,9 @@
   "portfolio_desc_block": "Egy modern, blokklánc-technológiára összpontosító multiplayer játék, letisztult felülettel.",
   "portfolio_desc_bus": "Egy egyedi tömegközlekedési járatkövető rendszer, amely egy Android appot, webes felületet és egy adminisztrációs panelt tartalmaz.",
   "portfolio_desc_scryper": "Egy új típusú társasjáték, amely a Unity játékfejlesztő motorral készült.",
-  "portfolio_desc_fitness": "Egy testsúlykövető webalkalmazás. A frontend React, a backend pedig Laravel használatával készült."
+  "portfolio_desc_fitness": "Egy testsúlykövető webalkalmazás. A frontend React, a backend pedig Laravel használatával készült.",
+  "open_menu": "Navigációs menü megnyitása",
+  "close_menu": "Navigációs menü bezárása",
+  "profile_alt": "Nagy Ábel profilképe"
 
 }

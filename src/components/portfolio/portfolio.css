@@ -32,24 +32,33 @@
 
 /* Card */
 .portfolio-card {
+  
   flex: 1 1 360px;
   max-width: 340px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  backdrop-filter:
+    blur(15px);
+  -webkit-backdrop-filter:
+    blur(15px);
+  border:
+    1px solid rgba(255, 255, 255, 0.15);
+  border-radius:
+    20px;
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  /* GPU optimization */
+  transform:
+    translateZ(0);
+
 }
 
-.portfolio-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
-}
+
 
 /* Image */
 .portfolio-image {
@@ -59,9 +68,7 @@
   transition: transform 0.5s ease;
 }
 
-.portfolio-card:hover .portfolio-image {
-  transform: scale(1.08);
-}
+
 
 /* Text section */
 .portfolio-content {
@@ -78,6 +85,32 @@
   font-size: 0.95rem;
   line-height: 1.5;
   opacity: 0.85;
+}
+@media (hover: hover) and (pointer: fine) {
+
+  .portfolio-card:hover {
+    transform:translateY(-6px)scale(1.02);
+    box-shadow:
+      0 20px 45px rgba(0, 0, 0, 0.25);
+  }
+
+  .portfolio-card:hover .portfolio-image {
+    transform:
+      scale(1.08);
+  }
+
+}
+
+
+
+/* Touch devices */
+
+@media (hover: none) {
+  .portfolio-card:active {
+    transform:
+      scale(0.98);
+  }
+
 }
 
 /* Mobile & Laptops with short screens */

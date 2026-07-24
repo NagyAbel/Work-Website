@@ -19,7 +19,7 @@ function About() {
 
           <div className="image-description">
           <div className="profile-container">
-                <img className="profile-image" src={logo} />
+              <img className="profile-image" src={logo} alt= {t("profile_alt")} />          
           </div>
 
           <p className="description">

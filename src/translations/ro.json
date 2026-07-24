@@ -39,6 +39,8 @@
   "portfolio_desc_block": "O aplicație modernă axată pe tehnologia blockchain, cu o interfață curată și funcționalitate eficientă.",
   "portfolio_desc_bus": "Un sistem personalizat pentru monitorizarea transportului public, ce include o aplicație Android, o interfață web și un panou de administrare.",
   "portfolio_desc_scryper": "Un nou tip de joc de table dezvoltat folosind motorul grafic Unity.",
-  "portfolio_desc_fitness": "O aplicație web pentru monitorizarea greutății. Dezvoltată folosind React pentru frontend și Laravel pentru backend."
-
+  "portfolio_desc_fitness": "O aplicație web pentru monitorizarea greutății. Dezvoltată folosind React pentru frontend și Laravel pentru backend.",
+  "open_menu": "Deschide meniul de navigare",
+  "close_menu": "Închide meniul de navigare",
+  "profile_alt": "Poza de profil a lui Nagy Ábel"
 }

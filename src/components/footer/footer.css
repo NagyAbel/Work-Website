@@ -7,6 +7,8 @@
   gap:1rem;
   background-color: var(--secondary-color);
   color: var(--text-color, #fff);
+  box-sizing: border-box;
+
 }
 
 .footer-links {

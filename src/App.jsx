@@ -5,6 +5,7 @@ import About from "./components/about/about";
 import Portfolio from "./components/portfolio/portfolio";
 import Contact from "./components/contact/contact";
 import Reviews from "./components/reviews/reviews";
+import SEO from "./components/SEO"; // Adjusted import path assuming SEO.jsx is in src/components/
 
 function App() {
   return (
@@ -22,9 +23,11 @@ function App() {
         <section id="portfolio">
           <Portfolio />
         </section>
+        
         <section id="reviews">
           <Reviews />
         </section>
+
         <section id="contact">
           <Contact />
         </section>

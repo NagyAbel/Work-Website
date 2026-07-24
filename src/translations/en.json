@@ -41,5 +41,10 @@
 
     "review_title":"Client Reviews",
     "fiverr_button_text":"More reviews on fiverr",
-    "portfolio_title":"Featured Projects"
+    "portfolio_title":"Featured Projects",
+
+    "open_menu": "Open navigation menu",
+    "close_menu": "Close navigation menu",
+    "profile_alt": "Nagy Abel profile picture"
+
 }

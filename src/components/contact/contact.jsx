@@ -101,12 +101,14 @@ function Contact() {
           required
         />
 
+      <div className="recaptcha-wrapper">
         <ReCAPTCHA
-          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-          ref={recaptchaRef}
-          onChange={(value) => setCaptchaValue(value)}
-          onExpired={() => setCaptchaValue(null)}
-        />
+        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        ref={recaptchaRef}
+        onChange={(value) => setCaptchaValue(value)}
+        onExpired={() => setCaptchaValue(null)}
+      />
+      </div>
 
         <button 
           className="send-button" 

@@ -145,43 +145,81 @@
   }
 }
 
+
 @media (max-width: 850px) {
+
   .contact {
-    /* Match exact padding used by Portfolio and other sections */
-    padding: 20px 10px; 
+    padding: 20px 10px;
   }
+
 
   .contact h1 {
     font-size: 2rem;
-    margin-bottom: 16px; /* Normalized margin under heading */
+    margin-bottom: 16px;
   }
+
 
   .contact-form {
     width: 95%;
-    padding: 20px 15px; /* Compacted inner form padding */
+    padding: 20px 15px;
   }
+
 
   .input {
     font-size: 1rem;
     height: 45px;
-    margin-bottom: 15px; /* Compacted input spacing */
+    margin-bottom: 15px;
   }
+
 
   .message {
     height: 120px;
   }
 
-  /* Wrap ReCAPTCHA to prevent layout breaks on small screens */
-  .contact-form iframe,
-  .contact-form > div {
-    max-width: 100%;
-    transform-origin: center;
+
+  .recaptcha-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
+
 
   .send-button {
     width: 100%;
     max-width: 100%;
     margin-top: 15px;
   }
+
 }
 
+
+/* Small phones (iPhone SE 1st gen, 320px screens) */
+@media (max-width: 400px) {
+
+  .recaptcha-wrapper {
+    width: 100%;
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    padding: 0px;
+    min-width: 400px;
+    min-height: 80px;
+  }
+
+}
+
+
+/* Very narrow phones */
+@media (max-width: 340px) {
+
+  .recaptcha-wrapper {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+
+    height: 60px;
+  }
+
+}

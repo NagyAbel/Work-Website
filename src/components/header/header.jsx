@@ -34,7 +34,9 @@ function Header({title, message, onNavigate, currentSection}) {
         </div>
 
 
-        <div className={`center ${active ? "open" : ""}`}>
+        <div className={`center ${active ? "open" : ""}`}
+          id="main-navigation"
+        >
           <button 
             className={getButtonClass("about")} 
             onClick={() => handleNavigate("about")}
@@ -73,11 +75,14 @@ function Header({title, message, onNavigate, currentSection}) {
 
         <button 
           className={`hamburger ${active ? "active" : ""}`}
+          aria-label={active ? t("close_menu") : t("open_menu")}
+          aria-expanded={active}
+          aria-controls="main-navigation"
           onClick={() => setActive(!active)}
         >              
-          <span></span>
-          <span></span>
-          <span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
         </button>
 
       </div>

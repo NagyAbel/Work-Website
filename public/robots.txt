@@ -1,0 +1,10 @@
+# Allow all search engine crawlers full access
+User-agent: *
+Allow: /
+
+# Prevent search engines from indexing internal build/system files (optional)
+Disallow: /api/
+Disallow: /*.json$
+
+# Direct search engine bots to your sitemap
+Sitemap: https://nagyabel.com/sitemap.xml
